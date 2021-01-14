@@ -1,3 +1,3 @@
 # Web(PHP)
-#Data trong thư mục Database.
-#htdocs
+# Data trong thư mục Database.
+# htdocs
