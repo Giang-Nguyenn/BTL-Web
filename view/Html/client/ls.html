@@ -1,0 +1,47 @@
+<!-- login-signup -->
+<div id="login" class="login">
+        <form class="login-content bg-white animate " action="?action=login" method="POST">
+             <p style="margin: 0px;" onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</p><br>
+             <label><b>UserName</b></label><br>
+             <input type="text" name="username" placeholder="EnterUserName" required=""><br>
+             <label><b>Password</b></label><br>
+             <input type="Password" name="password" placeholder="EnterPassword" required=""><br>
+             <input type="checkbox" name="admin" value="admin"> Admin
+             <input type="submit" name="login" value="Login">
+             <span>
+             <input type="checkbox" checked="checked" name="Remember">   Remember me
+             </span><br>
+             
+              <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancel">Cancel</button>
+              <span style="float: right;margin: 15px; font-size: 18px;">Forgot <a href="#">password?</a></span>
+              <!-- <p>hi</p> -->
+            
+        </form>
+</div>
+
+
+<div id="signup" class="signup">
+    <form class="signup-content bg-white animate" action="?action=signup" method="POST" enctype="multipart/form-data">
+         <p style="margin: 0px;" onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Modal">&times;</p><br>
+         <p style="font-size: 20px;font-weight: bold;text-align: center;">Signup</p>
+         <label><b>Name</b></label><br>
+         <input type="text" name="name" placeholder="EnterName" required=""><br>
+         <label><b>Phone</b></label><br>
+         <input type="text" name="phone" placeholder="EnterPhone:0-xxxxxxxxx" required="" pattern="[0]{1}[0-9]{9}"><br>
+         <label><b>Address</b></label><br>
+         <input type="text" name="address" placeholder="EnterAddress" required=""><br>
+         <label><b>Ảnh đại diện</b></label><br>
+         <input type="file" name="image" required=""><br>
+         <label><b>UserName</b></label><br>
+         <input type="text" name="username" placeholder="EnterUserName" required=""><br>
+         <label><b>Password</b></label><br>
+         <input type="Password" id="password" name="password" placeholder="EnterPassword" onkeyup='check()' required=""><br>
+         <label><b>Repeat Password</b></label><br>
+         <input type="Password" id="cpassword" name="cpassword" placeholder="EnterPassword" onkeyup='check()' required="" ><br>
+         <input type="submit" name="signup" value="Signup" id="tb" "> 
+         <p id="tb1"></p>       
+          <button type="button" onclick="document.getElementById('signup').style.display='none'" class="cancel">Cancel</button>
+          <!-- <p>hi</p> -->
+        
+    </form>
+</div>

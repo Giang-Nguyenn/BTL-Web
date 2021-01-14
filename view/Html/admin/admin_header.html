@@ -1,0 +1,66 @@
+<div class="header container-fluid bg-color">
+        <div class="row" style="display: flex;">
+            <div class="col-sm-1 logo">
+                <img src="./Images/Logo-Nhom7.png" alt="logo" width="90%">
+            </div>
+            <div class="col-sm-3 header-center">
+                <h4>Admin quản lý</h3>
+                
+            </div>
+            <div class="col-sm-5 header-center">
+                <form>
+                    <input type="text" name="" placeholder="Loại mặt hàng">
+                    <button class="btn">Tìm kiếm</button>
+                </form>
+            </div>
+            <div class="col-sm-3 header-center" >
+                <div class="header-center-messenger">
+                    <button type="button" class="btn" onclick="document.getElementById('messenger').style.display='block'"><i class="far fa-comment-dots fa-lg"></i></button>
+                    <span style="right: 5px;position: absolute; font-size: 12px; top: 3px; font-weight: bold;">1</span>
+
+
+                    <div id="messenger" class="messenger">
+                        <button style="float: right;margin: 5px;font-size: 20px;" onclick="document.getElementById('messenger').style.display='none'">X</button>
+                        <p style="color: black;margin: 10px;font-weight: bold;font-size: 18px;">Tin nhắn đến</p>
+                        <div class="messenger-item" onclick="document.getElementById('view-messenger-item1').style.display='inline-block'">
+                            <div class="col-sm-3">
+                                <img src="./Images/image_er/news.jpg" height="40px" width="40px" style="border-radius: 50%">
+                            </div>
+                            <div class="col-sm-9">
+                                <p style="font-size: 16px;margin: 0px;">Nguyễn Văn A</p>
+                                <span style="font-size: 12px;max-width: 200px;">Nội dung tin nhắn</span>
+                                <span style="float: right;">Time</span>
+                            </div>
+                        </div>
+                        <div class="messenger-item" onclick="document.getElementById('view-messenger-item2').style.display='inline-block'">
+                            <div class="col-sm-3">
+                                <img src="./Images/image_er/news.jpg" height="40px" width="40px" style="border-radius: 50%">
+                            </div>
+                            <div class="col-sm-9">
+                                <p style="font-size: 16px;margin: 0px;">Nguyễn Văn B</p>
+                                <span style="font-size: 12px;max-width: 200px;">abc</span>
+                                <span style="float: right;">Time</span>
+                            </div>
+                        </div>
+                        <div class="messenger-item" onclick="document.getElementById('view-messenger-item3').style.display='inline-block'">
+                            <div class="col-sm-3">
+                                <img src="./Images/image_er/news.jpg" height="40px" width="40px" style="border-radius: 50%">
+                            </div>
+                            <div class="col-sm-9">
+                                <p style="font-size: 16px;margin: 0px;">Nguyễn Văn C</p>
+                                <span style="font-size: 12px;max-width: 200px;">123</span>
+                                <span style="float: right;">Time</span>
+                            </div>
+                        </div>
+                    </div> 
+                     
+
+                </div>
+                <!-- <img src="../Images/news.jpg" alt="logo" width="50px;"> -->
+                <button type="button" class="btn" id="btn_login"><a href="?action=manager" style="color: white;">Quản lý</a></button>
+                <button type="button" class="btn" id="btn_signup" onclick="document.getElementById('signup').style.display='block'"><a href="?action=logout" style="color: white;">Đăng Xuất</a></button>
+            </div>
+            
+        </div>
+    </div>
+    
